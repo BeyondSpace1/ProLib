@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
+    </style>
+        <script src="https://kit.fontawesome.com/a471df1a92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="a">
+        <div class="contain">
+            <div class="menu">
+                <div class="l" id="l1"><span class="txt"><a href="/index">Home</a></span></div>
+                <div class="l" id="l2"><span class="txt"><a href="/projects">Projects</a></span></div>
+                <div class="l" id="l3"><span class="txt"><a href="/about">Contact Us</a></span></div>
+                <div class="l" id="l4"><span class="txt"><a href="/logout">Log Out</a></span></div>
+            </div>
+            <!-- <div id="m">&apid;</div> -->
+            <div id="m"><svg id="s1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="b">
+            <div class="b1">
+                <span id="txt1">Wanna share your own project ?</span><br>
+                <span id="txt2">Let us help You</span><br>
+                <span id="txt3">Contact us...</span><br>
+            </div>
+        </div>
+        <div class="d">
+            <ul>
+                <li id="l1"><div class="icon"><i class="fas fa-at" id="✉"></i></div><div id="t1"><a href="mailto:kumarsutikshan.1@gmail.com">Prolib</a></div></li>
+                <li id="l2"><div class="icon"><i class="fab fa-github" id="💡"></i></div><div id="t1"><a href="https://github.com/BeyondSpace1">https://github.com/BeyondSpace1</a></div></li>
+                <li id="l3"><div class="icon"><i class="fab fa-github" id="💡"></i></div><div id="t1"><a href="https://github.com/Ashutosh078Gautam">https://github.com/Ashutosh078Gautam</a></div></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+        let box=document.querySelectorAll('.box');
+        let btn1=document.querySelector('#m');
+        let m1=document.querySelector('.menu');
+        let s1=document.querySelector('#s1');
+        let main1=document.querySelector('.main');
+        let bd=document.body;
+    
+        btn1.addEventListener('click',()=>{
+            m1.classList.toggle('c');
+            s1.classList.toggle('o');
+            bd.classList.toggle('y');
+            main1.classList.toggle('nomove');
+        }); 
+</script>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In/ Sign Up</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+    <link rel="stylesheet" href="login.css">
+    
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$( "#form" ).submit(function(event) {
+				event.preventDefault();
+
+				$.ajax({
+					type: 'POST',
+					url: '/login',
+					data: $('#form').serialize(),
+					dataType: "json",
+					success: function(response){
+						//alert("a");
+						//console.log(response.Success);
+						$('#form')[0].reset();
+
+						document.getElementById("check").innerHTML=response.Success;
+         					//ADD THIS CODE
+         					setTimeout(function(){
+         						document.getElementById("check").innerHTML="";
+         					},3000);
+                            if (response.Success=="Success!") {
+         						document.getElementById("aa").click();
+         					};
+         				},
+         				error: function() {
+         				}
+         			})
+			});
+
+		});
+	</script>
+</head>
+<body>
+    <div class="contain">
+        <div class="main">
+        <h1>Log In</h1>
+        <div class="a">
+            <div class="b">
+            <form id="form" method="post">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    
+                    <label for="lname">Password</label>
+                    <input type="password" id="lname" name="passwd" required>
+                    
+                    <input type="submit" value="Submit" id="btn">
+                    <br><span id="check" ></span><br>
+                    <div id="LangTable"><a href="/index" id="aa"></a></div>
+
+                    <div class="re">
+                        Not have an acconut yet ?<br><a href="/"><u>Sign Up</u></a>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+        </div>
+    <div class="c">
+        <img src="./ProLib-logos_white.png" alt="">
+        <!-- <video src="./ProLib.mp4" muted autoplay loop></video> -->
+    </div>
+    </div>
+</body>
+</html>

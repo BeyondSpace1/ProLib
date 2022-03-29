@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: white;
+    box-sizing: border-box;
+    /* font-family: monospace; */
+    font-family: 'Turret Road', cursive;
+    font-size: 1.3rem;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+:any-link{
+    text-decoration: none;
+    color: unset;
+}
+body{
+    background-color: #d4d3d3;
+    /* min-height: 200vh; */
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+body.y{
+    overflow-y: hidden;
+}
+h1{
+    text-align: center;
+    /* color: #000; */
+    text-decoration: underline;
+    margin: 5px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.a{
+    position: absolute;
+}
+.a{
+    color: #fff;
+    z-index: 2;
+    opacity: 0.75;
+}
+.menu{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    width: 0;
+    top: 0;
+    height: 100vh;
+    transition: all 1.5s ease;
+}
+.txt a{
+    font-size: 0ch;
+    transform-origin: center;
+    transition: all .5s ease-in .4s;
+}
+#m{
+    /* background-color: rgb(157, 22, 236); */
+    position: fixed;
+    left: 10px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+#s1{
+    /* fill: #000; */
+    height: 30px;
+    width: 30px;
+    transition: all .5s ease-in;
+}
+#s1.o{
+    fill:#fff;
+}
+.menu.c{
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    fill: #fff;
+    flex-direction: column;
+    align-items: center;
+}
+.menu.c .txt a{
+    transform-origin: center;
+    font-size: 1.2em;
+}
+.l{
+    margin: 20px;
+}
+
+.b{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+    background-color: #232323;
+    text-align: center;
+}
+.b1>span{
+    /* text-transform: uppercase; */
+    font-family: 'Turret Road', cursive;
+    /* font-family: 'Yuji Boku', serif; */
+    font-size: 1.8rem;
+}
+#txt1{
+    font-size: 2.5rem;
+
+}
+.d{
+    height: 50vh;
+    width: 100%;
+    background: #00e5b6;
+}
+.d>ul{
+    color: #232323;    
+    font-family: 'Turret Road', cursive;
+    position: relative;
+    margin: 10px;
+    /* display: flex;
+    flex-direction: column; */
+}
+.d li{
+    list-style: none;
+    position: relative;
+    display: flex;
+}
+#✉,#💡{
+    color: #232323;
+    font-size: 2em;
+    margin: 10px;
+}
+#t1{
+    position: relative;
+    color: #232323;
+    top: 21px;
+}

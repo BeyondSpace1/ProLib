@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final draft-1</title>
+    <link rel="stylesheet" href="index.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');</style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="contain">
+            <div class="menu">
+                <div class="l" id="l1"><span class="txt"><a href="#">Home</a></span></div>
+                <div class="l" id="l2"><span class="txt"><a href="/projects">Projects</a></span></div>
+                <div class="l" id="l3"><span class="txt"><a href="/contact">Contact Us</a></span></div>   
+                <div class="l" id="l4"><span class="txt"><a href="/logout">Sign Out</a></span></div>
+            </div>
+            <!-- <div id="m">&apid;</div> -->
+            <div id="m"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg></div>
+        </div>
+        
+    </div>
+    <div class="b">
+        <div class="vid"><span>ProLib</span><br>
+            <h3>A one of a kind project library</h3><video src="./bincode.mp4" autoplay loop muted></video>
+        </div><br><br>
+        <section class="s">
+            <div class="div2" style="padding: 10px;">
+                <div class="s2"><img src="./project.png" alt="" id="s2"></div>
+                <div class="s2">So what's a project is ? How does it even works ? Can i create one ? What should be
+                        my topic ?
+                    <br><br> All of these are some question arises during developement of any project, so we are
+                    here answer them.
+                </div>
+            </div>
+            <div class="div3" style="padding:10px">
+                <div class="s3">
+                    <p><strong> What's ProLib ?</strong><br><br>
+                        We have created a project showcase to...,actually yes to 'showcase' some projects created by
+                        some teams back in time. <br>This will help the upcoming teams to create new projects or they
+                        can update the previous one to make it more useful</p>
+                </div>
+                <div class="s3"><img src="./touch.jpg" alt="" id="s3"></div>
+            </div>
+        </section>
+    </div>
+    <div class="d">
+        <div class="b1" id="btn"><a href="/projects">Projects<span> &blacktriangledown;</span></a></div>
+    </div>
+    <footer class="f1">&copy; All rights reserved</footer>
+    <div class="no_sup">Your device is not suitable for this application</div>
+</body>
+<script src="app1.js"></script>
+<script>
+    function clicked() {
+        document.getElementById("btn").classList.add("b2");
+    }
+    function shadow() {
+        document.getElementById("btn").classList.remove("b2");
+    }
+    document.getElementById("btn").addEventListener("mousedown", clicked);
+    document.getElementById("btn").addEventListener("mouseup", shadow);
+</script>
+
+</html>

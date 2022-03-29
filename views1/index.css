@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: white;
+    box-sizing: border-box;
+    /* font-family: monospace; */
+    font-family: 'Turret Road', cursive;
+
+    font-size: 1.3rem;
+}
+::-webkit-scrollbar{
+    /* width: 10px; */
+    display: none;
+}
+:any-link{
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    background-color: #232323;
+    min-height: 300vh;
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+body.y{
+    overflow-y: hidden;
+}
+.a,.b,.d{
+    position: absolute;
+}
+.a{
+    color: #fff;
+    z-index: 2;
+    opacity: 0.75;
+}
+.menu{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    width: 0;
+    height: 100vh;
+    transition: all 1.5s ease;
+    flex-direction: column;
+    align-items: center;
+}
+.txt a{
+    font-size: 0ch;
+    transform-origin: center;
+    transition: all .5s ease-in .4s;
+}
+#m{
+    /* background-color: rgb(157, 22, 236); */
+    position: fixed;
+    left: 10px;
+    top: 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+#m svg{
+    height: 40px;
+    width: 40px;
+}
+.b{
+    /* background-color: rgb(231, 216, 1); */
+    color: #fff;
+}
+.menu.c{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+.menu.c .txt a{
+    transform-origin: center;
+    font-size: 1.2em;
+}
+.l{
+    margin: 20px;
+}
+
+.vli:hover{
+    background-color: #555;
+}
+.vid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.75;
+}
+.vid span{
+    position: absolute;
+    font-size: 5em;
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    backdrop-filter: blur(5px);
+    /* border-radius: 50px; */
+    color: black;
+    background-color: white;
+    mix-blend-mode: screen;
+}
+video{
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+}
+.div1{
+    border: 2px solid red;
+    position: relative;
+    min-height: 100vh;
+}
+.s1{
+    border: 2px solid blue;
+    min-height: 50vh;
+    min-width: 50vw;
+    margin: 10px;
+}
+.div2{
+    /* border: 2px solid red; */
+    position: absolute; 
+    min-height: 50vh;
+    display: flex;
+}
+.s2{
+    /* border: 2px solid blue; */
+    min-height: 50vh;
+    min-width: 50vw;
+    margin: 5px;
+}
+#s2{
+    width: 50vw;
+    border-radius: 50px;
+}
+.div3{
+    /* border: 2px solid red; */
+    position: relative; 
+    right: 0;
+    top: 50vh;
+    min-height: 50vh;
+    display: flex;
+}
+.s3{
+    /* border: 2px solid blue; */
+    min-height: 50vh;
+    min-width: 50vw;
+}
+#s3{
+    width: 50vw;
+    border-radius: 50px;
+}
+.s3 strong{
+    font-size: 2.5em;
+}
+.f1{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    background-color: #333;
+    font-size: 0.8em;
+    /* border: 2px solid white; */
+}
+.no_sup{
+    display: none;
+    justify-self: center;
+}
+.d{
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b1{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 5em;
+    background-color:#222;
+    color: white;
+    border:none;
+    font-family: cursive;
+    font-size: 2rem;
+    position:absolute;
+    top: 40%;
+    width: 5em;
+    box-shadow:  -2px -1px 5px rgba(255, 255, 255, 0.12),   3px 3px 10px #000;
+}
+.b2{
+    padding: 1rem;    
+    display: flex;
+    justify-content: center;
+    border-radius: 5em;
+    background-color:#222;
+    color: white;
+    border:none;
+    font-family: cursive;
+    font-size: 2rem;
+    position:absolute;
+    top: 40%;
+    box-shadow: inset -2px -1px 5px rgba(255, 255, 255, 0.18), inset  5px 5px 10px #000;
+    transition: ease-in 1s;
+}
+.b1 span{
+    font-size: 1.2em;
+}
+@keyframes down1 {
+    0%,100%{
+         transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(5px);
+    }
+}
+@media  all and (max-width:310px) {
+    header{
+        display: none;
+    }
+    .no_sup{
+        display: flex;
+    }
+    .vnav{
+        display: none;
+    }
+    .s{
+        display: none;
+    }
+    .a,.b{
+        display: none;
+    }
+}
+@media  all and (min-width:310px) and (max-width:545px) {
+    *{
+        font-size: 1rem;
+    }
+    #header{
+        display: none;
+    }
+    .vnav{
+        display: unset;
+    }
+}
+@media all and (min-width:545px) and (max-width:1004px) {
+    *{
+        font-size: 1.1rem;
+    }
+    .vnav{
+        display: none;
+    }
+}
